@@ -1,28 +1,96 @@
+<!DOCTYPE html>
+<!-- HTML
 
-# Github
-	
+HYPERTEXT : Texto que contem links para outros documentos
+MARKUP : texto conterá marcaçoes <tags>
+LENGUAGE : Para me comunicar de certa maneira. Sintaxe especifica para a escrita.
+
+
+-->
 
 <html>
 
-<body>
-	<p>Ola eu sou o Jackson</p>
+<head>
 
-	<h1> Bora jogar um vai lorao </h2>
+    <!-- Configuraçoes da minha pagina -->
 
-	<h2> Eu adoro estudar TI <\h2>
+</head>
+<title>Doe sangue</title>
 
+<link rel="icon" href="cor.png">
 
-
-	<h4>Adicionando mais alguma coisa<\h4>
-
-
-
-
-
-	<h3>Sou main Jett<\h3>
-
-
-
-
+<link rel="stylesheet" href="style.css"> <!-- Puxando a classe de style para a pagina-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
 
 <body>
+    <!--TODO CONTEUDO VISTO PELO USUARIO-->
+    <header>
+        <img src="Doe.png" alt="DOE" sizes="30x40">
+
+        <h1> A sua doação importa!</h1>
+        <h2>Ajude essa causa !</h2>
+
+        <p>Faça parte você também e ajude o próximo</p>
+        <p>Mais de 38 mil doações são necessárias todos os dias</p>
+        <p>Apenas 1.9% da população brasileira doa sangue</p>
+
+        <button>Quero ajudar</button>
+    </header>
+    <!-- Conteudo do topo-->
+    <section class="form hide">
+        <!-- Indica uma sessão uma parte da aplicação-->
+        <h2>Faça parte da lista de doadores</h2>
+        <form action="/"> <!--Formulario no meio da tela-->
+            <input type="text" name="nome" placeholder="Nome completo"> <!-- Input são os campos em que o usuario ira digitar
+                                                                                as informações -->
+            <input type="text" name="email" placeholder="Email">
+                
+            <input type="text" name="TipoSanguineio" placeholder="Tipo sanguineo">
+
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    <main>
+        <h2>Últimos <span>contribuintes</span></h2>
+
+        <section class="Donors"> <!-- Indica um atributo de doadores uma sessão -->
+            <div class="Donor">
+                <div class="blood">AB+</div> <!-- Div é uma caixa que podemos classificar por nome -->
+                <P>Matheus Fedorine</P>
+
+
+            </div>
+            <div class="Donor">
+                <div class="blood">AB-</div> <!-- Nome de uma doador que ira aparecer abaixo-->
+                <P>Lucas marques</P>
+
+
+            </div>
+            <div class="Donor">
+                <div class="blood">O-</div>
+                <P>João Malandrão</P>
+
+
+            </div>
+            <div class="Donor">
+                <div class="blood">O+</div>
+                <P>Jackson o mais temido</P>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer> Jackson agradece sua colaboração ❤ </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+
+
+
+
+</html>
